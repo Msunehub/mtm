@@ -613,7 +613,7 @@ end
 local _Misc = Tabs.Misc do  
   _Misc:AddSection("Settings")
   _Misc:AddSlider({"Farm Distance", 5, 15, 1, 8, function(Value)
-    Settings.FarmDistance = Value or 11
+    Settings.FarmDistance = Value or 9
     Settings.FarmCFrame = CFrame_new(0, Value or 8, 0) * CFrame_Angles(math.rad(-90), 0, 0)
   end, "Farm Distance"})
   _Misc:AddToggle({"Auto Aura", Settings.AutoHaki, function(Value) Settings.AutoHaki = Value end, "Auto Haki"})
